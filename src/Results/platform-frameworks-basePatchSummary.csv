@@ -1,0 +1,5 @@
+project, sha, language, file_name, is_test,isExceptionPatch, method_name,total_add,total_del,while Adds,catch Dels,try Adds,try Dels,exception Dels,raise Adds,catch Adds,finally Dels,finally Adds,throw  Adds,for Dels,throw  Dels,for Adds,while Dels,exception Adds,raise Dels
+'platform-frameworks-base','bdebe1ad9573eec25f4acff89085530f490cc178','java','core/java/android/speech/srec/MicrophoneInputStream.java','False','False','NO_FUNC_CONTEXT','0','0','0','0','3','3'
+'platform-frameworks-base','738702d28ab7e0e89e3c6e18fd46cc1361917eb9','java','core/java/android/database/CursorWindow.java','False','False','recordNewWindow','1','1','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'
+'platform-frameworks-base','738702d28ab7e0e89e3c6e18fd46cc1361917eb9','java','core/java/android/database/CursorWindow.java','False','False','recordClosingOfWindow','1','1','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'
+'platform-frameworks-base','738702d28ab7e0e89e3c6e18fd46cc1361917eb9','java','core/java/android/database/CursorWindow.java','False','False','toString','1','1','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'

@@ -1,0 +1,43 @@
+import java.lang.reflect.Method;
+ class ReflectiveProperty<T, V> extends Property<T, V> {
+ 
+   
+   
+     public ReflectiveProperty(Class<T> propertyHolder, Class<V> valueType, String name) {
+    
+
+         try {
+-            mGetter = propertyHolder.getMethod(getterName, (Class<?>[])null);
++            // mGetter = propertyHolder.getMethod(getterName, (Class<?>[])null);
++            // The native implementation uses JNI to do reflection, which allows access to private methods.
++            mGetter = propertyHolder.getDeclaredMethod(getterName, (Class<?>[])null);
++            mGetter.setAccessible(true);
+         } catch (NoSuchMethodException e) {
+             // getName() not available - try isName() instead
+             getterName = PREFIX_IS + capitalizedName;
+             try {
+-                mGetter = propertyHolder.getMethod(getterName, (Class<?>[])null);
++                // mGetter = propertyHolder.getMethod(getterName, (Class<?>[])null);
++                // The native implementation uses JNI to do reflection, which allows access to private methods.
++                mGetter = propertyHolder.getDeclaredMethod(getterName, (Class<?>[])null);
++                mGetter.setAccessible(true);
+             } catch (NoSuchMethodException e1) {
+                 // Try public field instead
+                 try {
+                     mField = propertyHolder.getField(name);
+                     Class fieldType = mField.getType();
+                     if (!typesMatch(valueType, fieldType)) {
+                         throw new NoSuchPropertyException("Underlying type (" + fieldType + ") " +
+                                 "does not match Property type (" + valueType + ")");
+                     }
+                     return;
+                 } catch (NoSuchFieldException e2) {
+                     // no way to access property - throw appropriate exception
+                     throw new NoSuchPropertyException("No accessor method or field found for"
+                             + " property with name " + name);
+                 }
+             }
+        }
+    }
+}
+       

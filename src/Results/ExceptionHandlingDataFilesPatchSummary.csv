@@ -1,0 +1,2 @@
+project, sha, language, file_name, is_test,isExceptionPatch, method_name,total_add,total_del,"ut_a" Adds,assert Dels,"ut_a" Dels,assert Adds,<cassert> Adds,wtf/assertions.h Adds,"ut_ad" Dels,wtf/assertions.h Dels,assert.h Adds,assert.h Dels,"ut_ad" Adds,<cassert> Dels
+'ExceptionHandlingDataFiles','96cb1b3d5d7ee8120b12d8629f3f30ba75a4d8ac','java','app/src/main/java/com/github/mobile/accounts/AccountAuthenticator.java','False','False','addAccount','1','0','0','0','0','0','0','0'
