@@ -18,8 +18,8 @@ class LanguageSwitcherFactory:
     @staticmethod
     def createLS(language):
         if(LanguageSwitcherFactory.extMap == {}):
-            LanguageSwitcherFactory.loadLanguageMap("../../Resources/languages.yml")
-
+            # LanguageSwitcherFactory.loadLanguageMap("../../Resources/languages.yml")
+            LanguageSwitcherFactory.loadLanguageMap("./Resources/languages.yml")
         return LanguageSwitcherFactory.determineLanguage(language)
 
     #String -> String
