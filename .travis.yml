@@ -1,0 +1,5 @@
+.travis.yml
+language: python
+python:
+  - "2.7"
+script: /Users/gsr/Documents/CodeParser/src/logChunkTest.py
