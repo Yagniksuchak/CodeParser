@@ -9,7 +9,8 @@ class LanguageSwitcherFactory:
     extMap = {}
 
     @staticmethod
-    def loadLanguageMap(langFile = "../../Resources/languages.yml"):
+    # def loadLanguageMap(langFile = "../../Resources/languages.yml"):
+    def loadLanguageMap(langFile = "./Resources/languages.yml"):
         with open(langFile, 'r') as f:
             LanguageSwitcherFactory.extMap = yaml.safe_load(f)
 
