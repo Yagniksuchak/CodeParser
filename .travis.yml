@@ -19,8 +19,8 @@ install:
   # Useful for debugging any issues with conda
   - conda info -a
   # weird travis-ci python paths
-  - export PYTHONPATH=$PYTHONPATH:./src/util/
-  - export PYTHONPATH=$PYTHONPATH:./src/util/Util
+  -export PYTHONPATH=$PYTHONPATH:$(pwd)
+
 
 
   
