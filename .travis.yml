@@ -21,6 +21,8 @@ install:
   # weird travis-ci python paths
   - export PYTHONPATH=$PYTHONPATH:./src/util/
   - export PYTHONPATH=$PYTHONPATH:./src/
+  - export PYTHONPATH=$PYTHONPATH:../util/
+
   
   # Replace dep1 dep2 ... with your dependencies
   # - conda create -q -n test-environment python=$TRAVIS_PYTHON_VERSION dep1 dep2 ...
