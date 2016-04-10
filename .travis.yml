@@ -19,9 +19,7 @@ install:
   # Useful for debugging any issues with conda
   - conda info -a
   # weird travis-ci python paths
-  -export PYTHONPATH=$PYTHONPATH:$(pwd)
-
-
+  - export PYTHONPATH=$PYTHONPATH:$(pwd)
 
   
   # Replace dep1 dep2 ... with your dependencies
