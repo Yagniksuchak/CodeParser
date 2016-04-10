@@ -20,8 +20,8 @@ install:
   - conda info -a
   # weird travis-ci python paths
   - export PYTHONPATH=$PYTHONPATH:./src/util/
-  - export PYTHONPATH=$PYTHONPATH:./src/
-  - export PYTHONPATH=$PYTHONPATH:../util/
+  - export PYTHONPATH=$PYTHONPATH:./src/util/Util
+
 
   
   # Replace dep1 dep2 ... with your dependencies
@@ -31,4 +31,4 @@ install:
 
 script:
   # Your test script goes here
-  - python /src/logChunk/logChunkTest.py
+  - python ./src/logChunk/logChunkTest.py
