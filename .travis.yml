@@ -2,6 +2,9 @@ language: python
 python:
   # We don't actually use the Travis Python, but this keeps it organized.
   - "2.7"
+
+before_script: cd src/logChunk
+
 install:
   - sudo apt-get update
   # We do this conditionally because it saves us some downloading if the
@@ -30,4 +33,4 @@ install:
 
 script:
   # Your test script goes here
-  - python ./src/logChunk/logChunkTest.py
+  - python ./logChunkTest.py
