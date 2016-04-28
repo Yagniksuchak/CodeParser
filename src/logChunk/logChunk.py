@@ -14,7 +14,7 @@ from dictUtil import incrementDict, nonZeroCount
 from Config import Config
 from chunkingConstants import *
 
-#A log contains  a raw set of text and a set of functions
+#A log contains a raw set of text and a set of functions
 #parsed from the text.
 #TODO: Implement a mapping from language extensions to languages
 class logChunk:

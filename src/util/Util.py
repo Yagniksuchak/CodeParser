@@ -11,8 +11,8 @@ DEBUGLITE = 1
 DATABASE = 0
 CSV=1
 LOGTIME = 1
-# CONFIG = "../util/sample_conf.ini" #Location of the configuration file.
-CONFIG = "./src/util/sample_conf.ini" #Location of the configuration file.
+CONFIG = "../util/sample_conf.ini" #Location of the configuration file.
+
 supportedLanguages = ["C", "C++", "Java"]
 
 class cd:
